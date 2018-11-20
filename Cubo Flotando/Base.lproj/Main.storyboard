@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cubo_Flotando" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P2 - Cubo Flotando" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4f-BY-JsZ">
+                                <rect key="frame" x="0.0" y="44" width="375" height="36.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0rQ-yy-AV0">
+                                <rect key="frame" x="0.0" y="80.666666666666686" width="375" height="697.33333333333326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Fq-YW-Wpg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="348.66666666666669"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="jOJ-SS-cEK">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="41.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lado:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03X-E2-hk7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="41.666666666666664"/>
+                                                        <color key="backgroundColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="1" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="Zd8-nZ-ntb">
+                                                        <rect key="frame" x="78.999999999999986" y="0.0" width="227.66666666666663" height="42.666666666666664"/>
+                                                        <color key="backgroundColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <action selector="updateLado:" destination="BYZ-38-t0r" eventType="valueChanged" id="KPc-h4-pxQ"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8YP-rY-llr">
+                                                        <rect key="frame" x="310.66666666666669" y="0.0" width="56.333333333333314" height="41.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="03X-E2-hk7" firstAttribute="width" secondItem="jOJ-SS-cEK" secondAttribute="width" multiplier="0.2" id="qqG-7B-kWD"/>
+                                                    <constraint firstItem="8YP-rY-llr" firstAttribute="width" secondItem="jOJ-SS-cEK" secondAttribute="width" multiplier="0.15" id="tAi-vi-4um"/>
+                                                </constraints>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="8"/>
+                                            </stackView>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ZdH-bI-qFW" customClass="ParametricFunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="41.66666666666665" width="375" height="102.33333333333331"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cn-64-T05">
+                                                        <rect key="frame" x="8" y="8.0000000000000124" width="41.666666666666664" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.72805521094051473" blue="0.69231084351332228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Cn-64-T05" secondAttribute="trailing" id="ZWS-fw-2eU"/>
+                                                    <constraint firstItem="9Cn-64-T05" firstAttribute="leading" secondItem="ZdH-bI-qFW" secondAttribute="leading" constant="8" id="hST-mH-jDP"/>
+                                                    <constraint firstItem="9Cn-64-T05" firstAttribute="top" secondItem="ZdH-bI-qFW" secondAttribute="top" constant="8" id="kaG-m1-N7N"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textX" value="Tiempo"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textY" value="Posición Z"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="k8V-32-ryX" customClass="ParametricFunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="144" width="375" height="102.33333333333331"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDG-KW-big">
+                                                        <rect key="frame" x="8" y="7.9999999999999982" width="41.666666666666664" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93295379836874126" green="1" blue="0.59527582912364974" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="vDG-KW-big" firstAttribute="leading" secondItem="k8V-32-ryX" secondAttribute="leading" constant="8" id="mnm-sA-GDy"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vDG-KW-big" secondAttribute="trailing" id="obN-cq-KQS"/>
+                                                    <constraint firstItem="vDG-KW-big" firstAttribute="top" secondItem="k8V-32-ryX" secondAttribute="top" constant="8" id="rzH-B1-zoh"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textX" value="Tiempo"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textY" value="Velocidad"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="9uD-Lq-yiM" customClass="ParametricFunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="246.33333333333334" width="375" height="102.33333333333334"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xd-mp-UC9">
+                                                        <rect key="frame" x="8" y="7.9999999999999982" width="41.666666666666664" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.78679186370712262" green="1" blue="0.68316180627011935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="6xd-mp-UC9" firstAttribute="leading" secondItem="9uD-Lq-yiM" secondAttribute="leading" constant="8" id="Mov-zv-PuV"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6xd-mp-UC9" secondAttribute="trailing" id="fCU-cY-AGA"/>
+                                                    <constraint firstItem="6xd-mp-UC9" firstAttribute="top" secondItem="9uD-Lq-yiM" secondAttribute="top" constant="8" id="slF-Bd-A2N"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textX" value="Tiempo"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textY" value="Aceleración"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.63124603426395942" green="0.1458003288156223" blue="0.13518033852338796" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="9uD-Lq-yiM" firstAttribute="height" secondItem="ZdH-bI-qFW" secondAttribute="height" id="gyR-M6-heC"/>
+                                            <constraint firstItem="k8V-32-ryX" firstAttribute="height" secondItem="ZdH-bI-qFW" secondAttribute="height" id="tsx-hl-b8O"/>
+                                            <constraint firstItem="jOJ-SS-cEK" firstAttribute="height" secondItem="3Fq-YW-Wpg" secondAttribute="height" multiplier="0.12" id="yNA-IB-Cb7"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="8QB-RP-PRM" appends="YES" id="F7n-RW-REK"/>
+                                        </connections>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="cEq-W0-IE7">
+                                        <rect key="frame" x="0.0" y="348.66666666666663" width="375" height="348.66666666666663"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="nwW-Dr-Cud">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIb-rY-LpW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="41"/>
+                                                        <color key="backgroundColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="xxP-DO-Wr2">
+                                                        <rect key="frame" x="78.999999999999986" y="0.0" width="227.66666666666663" height="42"/>
+                                                        <color key="backgroundColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <action selector="updateTiempoPOI:" destination="BYZ-38-t0r" eventType="valueChanged" id="6JN-mV-KhR"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kfm-Iy-K70">
+                                                        <rect key="frame" x="310.66666666666669" y="0.0" width="56.333333333333314" height="41"/>
+                                                        <color key="tintColor" red="0.0069954521022737026" green="0.37532952427864075" blue="0.79310864210128784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="kfm-Iy-K70" firstAttribute="width" secondItem="nwW-Dr-Cud" secondAttribute="width" multiplier="0.15" id="Akp-Lo-a7h"/>
+                                                    <constraint firstItem="CIb-rY-LpW" firstAttribute="width" secondItem="nwW-Dr-Cud" secondAttribute="width" multiplier="0.2" id="WFo-yg-rdx"/>
+                                                </constraints>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="8"/>
+                                            </stackView>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="2Bq-GX-zX7" customClass="ParametricFunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="43" width="375" height="305.66666666666669"/>
+                                                <color key="backgroundColor" red="0.8152995522596157" green="0.89910017620088534" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textY" value="Velocidad"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textX" value="Posición"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nwW-Dr-Cud" firstAttribute="height" secondItem="jOJ-SS-cEK" secondAttribute="height" id="ocL-Ow-pKj"/>
+                                </constraints>
+                                <variation key="heightClass=compact" axis="horizontal" spacing="4"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i4f-BY-JsZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="C7n-SM-hGt"/>
+                            <constraint firstItem="i4f-BY-JsZ" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.05" id="bvH-nd-rxM"/>
+                            <constraint firstItem="i4f-BY-JsZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bxW-F3-R7c">
+                                <variation key="heightClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="0rQ-yy-AV0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="esA-gt-xnn"/>
+                            <constraint firstItem="0rQ-yy-AV0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pIH-n0-w87"/>
+                            <constraint firstItem="i4f-BY-JsZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qRm-br-u6v"/>
+                            <constraint firstItem="0rQ-yy-AV0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="r4J-8y-ZHC"/>
+                            <constraint firstItem="0rQ-yy-AV0" firstAttribute="top" secondItem="i4f-BY-JsZ" secondAttribute="bottom" id="y0W-P2-PAO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ih0-rb-EA0" appends="YES" id="kOd-Gg-QaJ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="acelFuncView" destination="9uD-Lq-yiM" id="O9W-eJ-67f"/>
+                        <outlet property="acelLabel" destination="6xd-mp-UC9" id="Zld-tG-pvT"/>
+                        <outlet property="ladoLabel" destination="8YP-rY-llr" id="VFk-Al-ZKz"/>
+                        <outlet property="ladoSlider" destination="Zd8-nZ-ntb" id="SmZ-Nr-S20"/>
+                        <outlet property="posZFuncView" destination="ZdH-bI-qFW" id="Ccz-i4-q6T"/>
+                        <outlet property="posZLabel" destination="9Cn-64-T05" id="cTg-DZ-YXo"/>
+                        <outlet property="tiempoLabel" destination="kfm-Iy-K70" id="DQX-cu-cAh"/>
+                        <outlet property="tiempoSlider" destination="xxP-DO-Wr2" id="n9B-7p-pIc"/>
+                        <outlet property="velFuncView" destination="k8V-32-ryX" id="BWu-WJ-iAh"/>
+                        <outlet property="velLabel" destination="vDG-KW-big" id="7by-L7-Sh4"/>
+                        <outlet property="vel_posFuncView" destination="2Bq-GX-zX7" id="QD9-CP-BDS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8QB-RP-PRM">
+                    <connections>
+                        <action selector="handleTap:" destination="BYZ-38-t0r" id="Ifx-qr-ldC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Ih0-rb-EA0">
+                    <connections>
+                        <action selector="handleSwipe:" destination="BYZ-38-t0r" id="q0K-pB-zUV"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
